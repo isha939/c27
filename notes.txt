@@ -1,0 +1,19 @@
+Till now, we have learned how to make any​ independent object​ which follows the laws of Physics. 
+ 
+But what about bodies which are joined together by some 'constraint': 
+ 
+For example, the train coaches are attached, or two objects connected by a rope or a spring. 
+ 
+ 
+We call such types of attachment a “​CONSTRAINT​”. One body is constrained or restricted in its movement by the position and movement of another body. 
+The Matter.Constraint is used for specifying that a fixed distance must be maintained between two bodies (or a body and a fixed world-space position). 
+
+There are many properties available. We are going to use these properties.
+ 1. length: pin joint.
+ 2. stiffness: To create elasticity, we can change the stiffness constraint. The value of stiffness can be 0.7 or above. If the constraint is unstable, try lowering the stiffness value and /or increasing it. 
+ 3. bodyA and bodyB - which is logical since constraint is going to be between two bodies. 
+ 
+ But before that, change the 'namespace' of our Matter.Constraint to be called Constraint. 
+ 
+We do this so that we do not have to call Matter.Constraint each time in our code. We can simply call it Constraint. 
+
